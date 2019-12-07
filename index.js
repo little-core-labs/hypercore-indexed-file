@@ -17,7 +17,7 @@ function file(pathspec, opts, callback) {
     indexing: true
   })
 
-  let defaultStorage = ram
+  let defaultStorage = opts.storage || ram
   let { hypercore } = opts
   let feed = null
 
