@@ -30,6 +30,7 @@ function file(pathspec, opts, callback) {
     }
   }
 
+  // istanbul ignore next
   if ('function' !== typeof hypercore) {
     hypercore = require('hypercore')
   }
@@ -59,7 +60,7 @@ function file(pathspec, opts, callback) {
       return callback(new Error('Feed is not writable.'))
     }
 
-    get(pathspec, (err, stream) => {
+    get(pathspec, opts, (err, stream) => {
       if (err) {
         return callback(err)
       }
