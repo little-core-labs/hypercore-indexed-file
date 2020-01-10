@@ -1,6 +1,6 @@
 {
   "name": "hypercore-indexed-file",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Address a local file or HTTP resource as an indexed Hypercore feed.",
   "main": "index.js",
   "scripts": {
